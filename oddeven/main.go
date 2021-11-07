@@ -2,6 +2,10 @@ package main
 
 import "fmt"
 
+/*
+* Go: The Complete Developer's Guide (Golang)
+* course's part 3 Homework
+ */
 func main() {
 
 	var arr []int = []int{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
