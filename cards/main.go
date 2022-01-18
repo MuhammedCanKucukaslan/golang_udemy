@@ -1,12 +1,20 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
-
+	filename := "hand.txt"
 	cards := newDeck()
 	cards.print()
+	fmt.Println("\n\n")
+	cards.saveToFile(filename)
+
 	cards.shuffle()
+	cards.print()
+	fmt.Println("\n\n")
+	cards = newDeckFromFile(filename)
 	cards.print()
 
 }

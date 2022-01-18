@@ -49,6 +49,13 @@ func (d deck) toString() string {
 
 func newDeckFromFile(filename string) deck {
 	var d deck = deck{}
+	// using the function
+	mydir, err := os.Getwd()
+	if err != nil {
+		fmt.Println(err)
+	}
+	fmt.Println(mydir)
+
 	byteSlice, err := ioutil.ReadFile(filename)
 	if err != nil {
 		fmt.Println("Error: ", err)
